@@ -1,0 +1,12 @@
+mypy == 1.4.1
+torch == 2.1.1
+pytest == 7.4.0
+torchvision == 0.16.1
+tqdm
+Pillow == 10.0.1
+librosa == 0.10.1
+kaggle
+
+# python train.py --batch_size 32 --lr 0.001 --num_epochs 5 --data_dir ../data/spectrogram --model_path ../runs/train/best_model.pt --weights_path ../runs/train/best_model_weights.pt --csv_file ../data/train.csv
+
+# python eval.py --checkpoint_path ../runs/train/best_model_weights.pt --data_dir ../data/spectrogram --csv_file ../data/train.csv
